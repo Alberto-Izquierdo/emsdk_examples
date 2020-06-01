@@ -18,8 +18,9 @@ jobs:
       run: |
           source ./emsdk/emsdk_env.sh
           ./build_all.sh
+          ./deploy.sh
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./cpp/1_simple_function_call/target
+        publish_dir: ./target
