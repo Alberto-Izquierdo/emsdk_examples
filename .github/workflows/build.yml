@@ -14,5 +14,4 @@ jobs:
     - name: Build
       run: |
           source ./emsdk/emsdk_env.sh
-          cd cpp/1_simple_function_call
-          ./build.sh
+          ./build_all.sh
