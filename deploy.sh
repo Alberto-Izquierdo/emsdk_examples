@@ -6,7 +6,7 @@ LIST=""
 for directory in $(ls -1); do
     cd ${directory}
     cp -r target ../../target/cpp/${directory}/
-    LIST="${LIST}\n<a href="./${directory}/index.html">${directory}</a>"
+    LIST="${LIST}\n<li><a href="./${directory}/index.html">${directory}</a></li>"
     cd ..
 done
 echo "Examples built correctly"
