@@ -12,4 +12,4 @@ done
 echo "Examples built correctly"
 popd >/dev/null 2>&1
 echo $(pwd)
-sed -i "s|{examples}|${LIST}|g" target/cpp/index.html
+sed -i "s|{to_replace}|${LIST}|g" target/cpp/index.html
